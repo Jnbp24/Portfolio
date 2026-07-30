@@ -1,0 +1,108 @@
+.profile {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.profile h1 {
+  text-align: center;
+}
+
+.profile-layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.info-box {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+}
+
+.photo {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.photo img {
+  width: 180px;
+  height: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.bio {
+  flex: 2;
+}
+
+.bio p {
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+.bio p:last-child {
+  margin-bottom: 0;
+}
+
+.skills {
+  flex: 1;
+}
+
+.skill-group ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.skill-group li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #f4f4f4;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.skill-group li img {
+  width: 1.1em;
+  height: 1.1em;
+  object-fit: contain;
+}
+
+.lookingforwork {
+  width: 100%;
+}
+
+.lookingforwork ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lookingforwork li a {
+  display: flex;
+  align-items: center;
+}
+
+.lookingforwork li img {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lookingforwork li img:hover {
+  transform: scale(1.1);
+}
