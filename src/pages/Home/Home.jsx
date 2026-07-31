@@ -1,19 +1,28 @@
-import projects from "../../data/projects";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./Home.css";
+
+import Navbar from "../../components/Navbar/Navbar";
+import Hero from "../../components/Hero/Hero";
+import Contact from "../../components/Contact/Contact";
+import Skills from "../../components/Skills/Skills";
+import Projects from "../../components/Projects/Projects";
+import Experience from "../../components/Experience/Experience";
 
 function Home() {
   return (
-    <main className="home">
-      <div className="projects">
-        {projects.map((project) => (
-          <ProjectCard 
-            key={project.id} 
-            project={project} 
-          />
-        ))}
-      </div>
-    </main>
+    <>
+      <Navbar />
+
+      <main className="home">
+        <div className="top-section">
+          <Hero />
+          <Contact />
+        </div>
+
+        <Skills />
+        <Projects />
+        <Experience />
+      </main>
+    </>
   );
 }
 
